@@ -16,7 +16,7 @@ class AddTransactionsToPropertyTable extends Migration
         Schema::table('property', function (Blueprint $table) {
             // $table->increments('id');
             // $table->string('name');
-            $table->string('transaction');
+            $table->string('transaction')->after('name');
             $table->integer('category_id')->unsigned()->change();
             $table->foreign('category_id')->references('id')->on('categories');
             // $table->string('location');
