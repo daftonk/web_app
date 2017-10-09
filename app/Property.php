@@ -18,4 +18,8 @@ class Property extends Model
         'details',
         'images',
     ];
+
+    public function category(){
+        return $this->belongsTo('App\Category');
+    }
 }
