@@ -17,7 +17,7 @@ class PropertyController extends Controller
         //
         $property = Property::all();
 
-        return view('property.index', ['property'=>$property]);
+        return view('property.index', ['property'=> $property]);
     }
 
     /**
